@@ -18,12 +18,12 @@ footer{
     }
   }
   & div{
-    @include contenedor-flex;
+    @include contenedor-flex(column);
     & p{
+      width: 100%;
       margin-bottom: 1em;
     }
     & a{
-      width: 100%;
       text-decoration: none;
       color: $primary-color;
     }
@@ -32,6 +32,6 @@ footer{
     width: 100px;
   }
   & p{
-    width: 100%;
+    width: 80%;
   }
 }

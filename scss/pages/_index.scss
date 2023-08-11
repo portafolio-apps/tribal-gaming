@@ -21,10 +21,52 @@
   margin-top: 1em;
   margin-left: 10%;
   margin-right: 10%;
+  background: url("../../img/background-brawl.jpg");
+  height: 400px;
+  overflow: scroll;
   & h2{
-    width: 100%;
+    justify-self: center;
     margin-bottom: 1em;
     color: $primary-color;
+  }
+  &-info{
+    display: flex;
+    width: 90%;
+    justify-self: center;
+    color: $primary-color;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    &-article{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      & h3{
+        width: 100%;
+      }
+      & img{
+        width: 50px;
+        height: 60px;
+      }
+    }
+    
+  }
+  &-members{
+    justify-self: center;
+    width: 90%;
+    &-article{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      background-color: #8a778a;
+      overflow: scroll;
+      & img{
+        width: 40px;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -62,6 +104,7 @@
   margin-top: 1em;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 1em;
   & h2{
     width: 100%;
     margin-bottom: 1em;
@@ -123,8 +166,56 @@
 
   .club{
     @include contenedor-grid;
+    margin-top: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: url("../../img/background-brawl.jpg");
+    height: 400px;
     & h2{
       grid-column: span 2;
+      justify-self: center;
+      margin-bottom: 1em;
+      color: $primary-color;
+    }
+    &-info{
+      display: flex;
+      width: 90%;
+      justify-self: center;
+      color: $primary-color;
+      height: 330px;
+      border: 1px solid black;
+      &-article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        & h3{
+          width: 100%;
+        }
+        & img{
+          width: 50px;
+          height: 60px;
+        }
+      }
+      
+    }
+    &-members{
+      overflow: scroll;
+      justify-self: center;
+      width: 90%;
+      &-article{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        background-color: #8a778a;
+        overflow: scroll;
+        & img{
+          width: 40px;
+          text-align: center;
+        }
+      }
     }
   }
 
@@ -148,7 +239,6 @@
 
   .contact{
     @include contenedor-grid;
-    margin-bottom: 1em;
     & h2{
       grid-column: span 2;
     }
