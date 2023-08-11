@@ -1,0 +1,37 @@
+footer{
+  @include contenedor-flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $background-color;
+  color: $primary-color;
+  & nav{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    & ul{
+      list-style: none;
+      & li{
+        & a{
+          text-decoration: none;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  & div{
+    @include contenedor-flex;
+    & p{
+      margin-bottom: 1em;
+    }
+    & a{
+      width: 100%;
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+  & img{
+    width: 100px;
+  }
+  & p{
+    width: 100%;
+  }
+}

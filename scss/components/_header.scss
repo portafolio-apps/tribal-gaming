@@ -1,0 +1,43 @@
+header{
+  @include contenedor-flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $background-color;
+  color: $primary-color;
+  & h1{
+    & a{
+      text-decoration: none;
+      color: $primary-color;
+    }
+  }
+  & img{
+    width: 100px;
+    &:last-of-type{
+      display: none;
+    }
+  }
+  & nav{
+    margin-top: 1em;
+    width: 100%;
+    & ul{
+      @include contenedor-flex;
+      justify-content: space-evenly;
+      list-style: none;
+      & li{
+        display: inline;
+        & a{
+          text-decoration: none;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+  header{
+    img:last-of-type{
+      display: inline;
+    }
+  }
+}
