@@ -23,7 +23,7 @@
   margin-right: 10%;
   background: url("../../img/background-brawl.jpg");
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
   & h2{
     justify-self: center;
     margin-bottom: 1em;
@@ -171,6 +171,7 @@
     margin-right: 10%;
     background: url("../../img/background-brawl.jpg");
     height: 400px;
+    overflow-y: hidden;
     & h2{
       grid-column: span 2;
       justify-self: center;
