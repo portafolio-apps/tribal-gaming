@@ -299,6 +299,7 @@ footer p {
     margin-right: 10%;
     background: url("../../img/background-brawl.jpg");
     height: 400px;
+    overflow-y: hidden;
   }
   .club h2 {
     grid-column: span 2;
@@ -329,7 +330,7 @@ footer p {
     height: 60px;
   }
   .club-members {
-    overflow: scroll;
+    overflow-y: scroll;
     justify-self: center;
     width: 90%;
   }
